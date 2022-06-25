@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AC0BF5D-E744-42DE-9517-D9F27F38928F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cannondale</RootNamespace>
+    <AssemblyName>Cannondale</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Añadir_trabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Añadir_trabajador.designer.cs">
+      <DependentUpon>Añadir_trabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Bicicletas_de_catalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Bicicletas_de_catalogo.Designer.cs">
+      <DependentUpon>Bicicletas_de_catalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminar_trabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminar_trabajador.Designer.cs">
+      <DependentUpon>Eliminar_trabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Synapse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Synapse.Designer.cs">
+      <DependentUpon>Synapse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu_Administradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu_Administradores.Designer.cs">
+      <DependentUpon>Menu_Administradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu_Coordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu_Coordinador.Designer.cs">
+      <DependentUpon>Menu_Coordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu_Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu_Template.Designer.cs">
+      <DependentUpon>Menu_Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Buscar_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Buscar_Clientes.Designer.cs">
+      <DependentUpon>Buscar_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CAADOptimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CAADOptimo.Designer.cs">
+      <DependentUpon>CAADOptimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Registro_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Registro_Ventas.Designer.cs">
+      <DependentUpon>Registro_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Template.designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Acceso_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Acceso_Inicio.Designer.cs">
+      <DependentUpon>Acceso_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu_Ventas.Designer.cs">
+      <DependentUpon>Menu_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Añadir_trabajador.resx">
+      <DependentUpon>Añadir_trabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Bicicletas_de_catalogo.resx">
+      <DependentUpon>Bicicletas_de_catalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminar_trabajador.resx">
+      <DependentUpon>Eliminar_trabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Synapse.resx">
+      <DependentUpon>Synapse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu_Administradores.resx">
+      <DependentUpon>Menu_Administradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu_Coordinador.resx">
+      <DependentUpon>Menu_Coordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu_Template.resx">
+      <DependentUpon>Menu_Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Buscar_Clientes.resx">
+      <DependentUpon>Buscar_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CAADOptimo.resx">
+      <DependentUpon>CAADOptimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Registro_Ventas.resx">
+      <DependentUpon>Registro_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Acceso_Inicio.resx">
+      <DependentUpon>Acceso_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu_Ventas.resx">
+      <DependentUpon>Menu_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagenes\hamburguesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagenes\hamburguesa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagenes\Rojo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagenes\Inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagenes\icono-menu.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
