@@ -1,2 +1,2 @@
-# APP-Cannondale-C-.NET-
+# APP Cannondale C# & .NET
 Aplicación desarrollada en C# & .NET
